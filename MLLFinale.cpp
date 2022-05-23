@@ -199,7 +199,7 @@ void removeRelationData(list_numberY* listY, int keyNumberY, int keyNumberX) {
 }
 
 //fungsi print
-void printData(list_numberX* numberX = NULL, list_numberY* numberY = NULL ){
+void displayData(list_numberX* numberX = NULL, list_numberY* numberY = NULL ){
     if (numberY != NULL) {
         data_numberY* currentNumberY = numberY->first;
         cout<< "----------Node-------------" << "\n" << endl;
@@ -236,31 +236,31 @@ list_numberY* lNumberY = new list_numberY();
 list_numberX* lNumberX = new list_numberX();
 
 addNumberYData(lNumberY, 2);
-printData(lNumberX, lNumberY);
+displayData(lNumberX, lNumberY);
 
 addNumberXData(lNumberX, 19);
-printData(lNumberX, lNumberY);
+displayData(lNumberX, lNumberY);
 
 addNumberXData(lNumberX, 25);
-printData(lNumberX, lNumberY);
+displayData(lNumberX, lNumberY);
 
 addNumberXData(lNumberX, 13);
-printData(lNumberX, lNumberY);
+displayData(lNumberX, lNumberY);
 
 addNumberYData(lNumberY, 27);
-printData(lNumberX, lNumberY);
+displayData(lNumberX, lNumberY);
 
 addRelationData(lNumberY, lNumberX, 27, 13);
-printData(lNumberX,lNumberY);
+displayData(lNumberX,lNumberY);
 
 addRelationData(lNumberY, lNumberX, 27, 19);
-printData(lNumberX,lNumberY);
+displayData(lNumberX,lNumberY);
 
 removeRelationData(lNumberY, 27, 13);
-printData(lNumberX,lNumberY);
+displayData(lNumberX,lNumberY);
 
 removeNumberXData(lNumberX, 25);
-printData(lNumberX,lNumberY);
+displayData(lNumberX,lNumberY);
 
 
 }
