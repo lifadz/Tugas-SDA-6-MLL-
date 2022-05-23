@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 
-//Number X
+//Number X (Child)
 struct numberX{
     int data;
 
@@ -19,7 +19,7 @@ struct list_numberX{
     data_numberX* first;
 };
 
-//Number Y
+//Number Y (Parents)
 struct numberY{
     int data;
 
