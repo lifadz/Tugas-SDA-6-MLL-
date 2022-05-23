@@ -202,7 +202,7 @@ void removeRelationData(list_numberY* listY, int keyNumberY, int keyNumberX) {
 void printData(list_numberX* numberX = NULL, list_numberY* numberY = NULL ){
     if (numberY != NULL) {
         data_numberY* currentNumberY = numberY->first;
-        cout<< "----------Node-------------" << endl;
+        cout<< "----------Node-------------" << "\n" << endl;
         cout << "Data Number Y:" << endl;
         while (currentNumberY != NULL) {
             cout << currentNumberY->info->data << "\t";
