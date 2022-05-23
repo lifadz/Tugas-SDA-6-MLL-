@@ -52,7 +52,7 @@ void addNumberYData(list_numberY* list, int value){
     }
 }
 
-//fungsi add data child
+//fungsi add data Number X
 void addNumberXData(list_numberX* list, int value = NULL, data_numberX* inputedData = NULL) {
     if (value != NULL) {
         data_numberX* data = new data_numberX();
